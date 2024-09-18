@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.drop {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    pointer-events: none;
+}
+
+.main-drop:hover .drop {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: fill;
+}
+
+
+
+.drop-services{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    pointer-events: none;
+}
+
+.services:hover .drop-services{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: fill;
+}
+
+
+
+
+
+
+
+
+
+
+
