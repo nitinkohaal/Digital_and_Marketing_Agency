@@ -4,17 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind-project</title>
-  <link rel="stylesheet" href="src/output.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Digital and Marketing Agency</title>
+  <link rel="shortcut icon" href="./source/logo-buttery-white.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./style.css">
   <script src="https://kit.fontawesome.com/77d12f9e8c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden font-serif">
+<body class="overflow-x-hidden font-serif  ">
+
+  <div class="loader">
+    <div class="loader-text">Loading...</div>
+    <div class="loader-bar"></div>
+</div>
+
+
+
+  
 
 
   <nav
-    class="backdrop-blur-lg  bg-blck w-full flex justify-between  items-center    box-border px-4  h-14 xs:px-14 fixed z-10 py-10   ">
+    class="backdrop-blur-lg  bg-blck w-full flex justify-between  items-center    box-border px-4  h-14 xs:px-14 fixed z-10 py-10   " id="nav" >
     <div class="flex   ">
       <img src="./source/logo-buttery-white.svg" class="mr-5 " alt="">
 
@@ -117,9 +130,9 @@
 
     <div class="flex items-center">
       <button
-        class=" hidden xs:block bg-main  px-4 py-2 font-semibold box-border border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none duration-200   :">Contact
+        class=" cursor-pointer hidden xs:block bg-main  px-4 py-2 font-semibold box-border border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none duration-200   :">Contact
         us</button>
-      <span class=" xmd:hidden  ">
+      <span class=" cursor-pointer xmd:hidden  ">
         <i class="fa-solid fa-bars-staggered ml-3 text-white "></i>
       </span>
 
@@ -129,19 +142,19 @@
 
   <!-- section2 -->
 
-  <div class="w-full  py-24 box-border px-1 md:flex justify-around gap- bg-black ">
+  <div class="w-full   py-24 box-border px-1 md:flex justify-around gap- bg-black " id="main">
     <div class=" md:w-2/4 flex  text-center md:text-start flex-col ">
-      <h1 class=" text-3xl text-white xs:text-5xl font-semibold font-serif lg:text-7xl xl:text-8xl md:text-6xl  ">A
+      <h1 class=" main-heading text-3xl text-white xs:text-5xl font-semibold font-serif lg:text-7xl xl:text-8xl md:text-6xl  ">A
         creatives <span class="text-main">*</span>
         <br> design studio
       </h1>
 
-      <p class=" mt-4 mb-5 xs:mt-8 xs:font-medium lg:text-xl text-white  text-pretty  ">We're a creative design studio specializing
+      <p class=" main-p mt-4 mb-5 xs:mt-8 xs:font-medium lg:text-xl text-white   text-pretty">We're a creative design studio specializing
         in
         meeting the needs
         of the new generation. We offer innovative and
         cutting-edge design solutions to help our clients stand out in today's fast-paced.</p>
-      <div class="  md:flex items-center  gap-3">
+      <div class=" main-three  md:flex items-center  gap-3">
         <div class="flex justify-center">
           <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/hero-user-1.png" alt="hero-user-1"
             class=" h-[66px] w-[66px] rounded-[50%] border-[6px] border-black">
@@ -154,10 +167,10 @@
 
       </div>
 
-      <div class="mt-8 mb-8 relative md:flex    ">
+      <div class="mt-8 mb-8 relative md:flex btn-all    ">
 
         <button
-          class=" bg-main   px-8 py-3 font-semibold box-border border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none transition-all">Book
+          class=" cursor-pointer bg-main   px-8 py-3 font-semibold box-border border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none transition-all">Book
           a free consulation
           <span class="bg-black p-3 rounded-[50%]"><i class="fa-solid fa-phone text-white"></i></span>
         </button>
@@ -169,7 +182,7 @@
 
     </div>
 
-    <div class=" w-full md:w-1/3 flex justify-center items-center">
+    <div class=" main-img w-full md:w-1/3 flex justify-center items-center">
       <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/hero-img.jpg"
         class="  md:h-[400px] border-[5px] border-white rounded-xl  " alt="">
     </div>
@@ -178,10 +191,11 @@
 
   <!-- section3 -->
 
-  <div class="container    max-w-full flex flex-col items-center gap-3 py-24">
-    <div class="w-11/12">
+  <div class=" section-3   container     max-w-full flex flex-col items-center gap-3 py-24">
+
+    <div id="sec-3-h" class="w-11/12">
       <h1
-        class=" text-center text-3xl text-black xs:text-5xl font-semibold font-serif lg:text-7xl xl:text-8xl md:text-6xl  text-pretty">
+        class=" text-center text-3xl text-black xs:text-5xl font-semibold  lg:text-7xl xl:text-8xl md:text-6xl">
         We provide effective <br> design solutions <span class="text-main">*</span>
 
       </h1>
@@ -189,12 +203,12 @@
 
     <div class=" xmd:flex w-11/12  gap-3 justify-between ">
 
-      <div class=" group w-full xmd:w-[49%] mt-5 ">
+      <div id="skill-1" class=" cursor-pointer  group w-full xmd:w-[49%] mt-5 ">
         <div
-          class="  border-black border-[2px] rounded-2xl group-hover:shadow-trans  group-hover:bg-main duration-200  p-4">
+          class="  cursor-pointer border-black border-[2px] rounded-2xl group-hover:shadow-trans  group-hover:bg-main duration-200  p-4">
           <img src="https://aximo-tailwind.netlify.app/assets/img/icons/th-1-service-icon-1.svg" alt="">
           <h2 class="py-4 pb-2 font-medium text-4xl">UI/UX Design</h2>
-          <p class="py-2 font-normal  text-pretty ">Focusing on user interface (UI) and user experience (UX) design to enhance the
+          <p class="py-2 font-normal  text-pretty">Focusing on user interface (UI) and user experience (UX) design to enhance the
             usability and accessibility of digital products & app.</p>
           <span class=" text-5xl  "><i
               class="  fa-solid fa-right-long duration-200 group-hover:translate-x-10  py-2"></i></span>
@@ -202,12 +216,12 @@
       </div>
 
 
-      <div class=" w-full xmd:w-[49%] group mt-5">
+      <div  id="skill-2"class="cursor-pointer  w-full xmd:w-[49%] group mt-5">
         <div
           class=" border-black border-[2px] rounded-2xl p-4 group-hover:shadow-trans  group-hover:bg-main duration-200">
           <img src="https://aximo-tailwind.netlify.app/assets/img/icons/th-1-service-icon-2.svg" alt="">
           <h2 class="py-4 pb-2 font-medium text-4xl">Graphic Design</h2>
-          <p class="py-2 font-normal  text-pretty ">Creating visual elements such as logos, branding materials, page layout
+          <p class="py-2 font-normal text-pretty ">Creating visual elements such as logos, branding materials, page layout
             techniques,
             brochures, & other marketing collateral.</p>
           <span class="  text-5xl  "><i
@@ -218,23 +232,23 @@
 
     </div>
 
-    <div class=" xmd:flex w-11/12  gap-3 justify-between">
+    <div  class=" xmd:flex w-11/12  gap-3 justify-between">
 
-      <div class="w-full xmd:w-[49%] group mt-5">
+      <div id="skill-3" class="cursor-pointer  w-full xmd:w-[49%] group mt-5">
         <div class="  border-black border-[2px] rounded-2xl p-4 group-hover:shadow-trans  group-hover:bg-main duration-200 ">
           <img src="https://aximo-tailwind.netlify.app/assets/img/icons/th-1-service-icon-3.svg" alt="">
           <h2 class="py-4 pb-2 font-medium text-4xl">Web Design</h2>
-          <p class="py-2 font-normal  text-pretty">Designing and developing websites to ensure they are visually look and appealing,
+          <p class="py-2 font-normal text-pretty ">Designing and developing websites to ensure they are visually look and appealing,
             user-friendly, and functional your website.</p>
           <span class=" text-5xl  "><i class=" group-hover:translate-x-10 duration-200 fa-solid fa-right-long  py-2"></i></span>
         </div>
       </div>
 
-      <div class="w-full xmd:w-[49%] group mt-5">
-      <div class=" border-black border-[2px] rounded-2xl p-4 group-hover:shadow-trans  group-hover:bg-main duration-200  ">
+      <div id="skill-4" class=" w-full xmd:w-[49%] group mt-5">
+      <div class="cursor-pointer border-black border-[2px] rounded-2xl p-4 group-hover:shadow-trans  group-hover:bg-main duration-200  ">
         <img src="https://aximo-tailwind.netlify.app/assets/img/icons/th-1-service-icon-4.svg" alt="">
         <h2 class="py-4 pb-2 font-medium text-4xl">Motion Graphic</h2>
-        <p class="py-2 font-normal  text-pretty ">Creating animated graphics, videos for various purposes, including marketing and
+        <p class="py-2 font-normal text-pretty ">Creating animated graphics, videos for various purposes, including marketing and
           entertainment. To help sell a product or service.</p>
         <span class="  text-5xl "><i class=" group-hover:translate-x-10 duration-200 fa-solid fa-right-long  py-2"></i></span>
       </div>
@@ -257,14 +271,14 @@
 
 
 
-  <div class="container max-w-full  flex flex-col items-center  ">
-    <div class=" w-11/12  xmd:flex text-center xmd:text-start my-7">
+  <div class=" sec-4 container max-w-full  flex flex-col items-center  ">
+    <div class="  sec4-1 w-11/12  xmd:flex text-center xmd:text-start my-7">
       <div class="w-full xmd:w-4/6 box-border  ">
         <h1 class="text-3xl  xs:text-5xl  font-medium lg:text-7xl  md:text-6xl xl:text-8xl ">We make your <span
             class="text-main  ">*</span> business stand out</h1>
       </div>
       <div class="w-full xmd:w-1/3 box-border p-5">
-        <p class=" xs:font-medium text-lg  lg:text-xl  text-pretty ">We work closely with our clients to know their objectives, target audience, unique
+        <p class=" xs:font-medium text-lg  lg:text-xl text-pretty  ">We work closely with our clients to know their objectives, target audience, unique
           needs, and practical design solutions.</p>
       </div>
 
@@ -272,14 +286,14 @@
 
     </div>
     <div class=" w-11/12  xmd:flex justify-between gap-2 py-5  ">
-      <div class=" w-full xmd:w-4/6 mb-4 ">
+      <div class=" sec4-2 w-full xmd:w-4/6 mb-4 ">
         <div class="relative w-full box-border ">
           <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/about-img.jpg"
             class="rounded-3xl xmd:h-[500px] border-[5px] border-black    " alt="">
           <div class="w-full h-full flex items-center justify-center absolute top-0  ">
 
             <button
-              class="bg-main  px-6 py-2 font-semibold border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none duration-200  ">Play
+              class="cursor-pointer bg-main  px-6 py-2 font-semibold border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none duration-200  ">Play
               <span><i class="fa-solid fa-play"></i></span></button>
 
           </div>
@@ -287,7 +301,7 @@
       </div>
 
       <div
-        class="w-full xmd:w-1/3 h-[300px] xmd:h-[500px] box-border  rounded-2xl text-center bg-black flex flex-col justify-between py-3  px-3 mb-4">
+        class=" sec4-3 w-full xmd:w-1/3 h-[300px] xmd:h-[500px] box-border  rounded-2xl text-center bg-black flex flex-col justify-between py-3  px-3 mb-4">
 
         <h1 class="text-3xl xs:text-4xl md:text-5xl xmd:text-7xl font-bold text-main ">15+ </h1>
         <p class="text-xs md:text-xl  text-white">Year of experience</p>
@@ -315,9 +329,9 @@
 
 
 
-  <div class="w-full bg-black flex justify-center flex-col items-center  box-border py-20 gap-10 xmd:gap-24 ">
-    <div class="w-11/12 text-center">
-      <h1 class="text-3xl  text-white xs:text-5xl  font-serif lg:text-7xl  md:text-6xl ">Have a wide range
+  <div class=" sec-5 w-full bg-black flex justify-center flex-col items-center  box-border py-20 gap-10 xmd:gap-24 ">
+    <div class=" sec5-1 w-11/12 text-center">
+      <h1 class="text-3xl  text-white xs:text-5xl   lg:text-7xl  md:text-6xl ">Have a wide range
         of creative projects <span class="text-main">*</span></h1>
 
     </div>
@@ -325,14 +339,14 @@
 
 
 
-      <div class="sec5 md:w-1/3 flex justify-center   group my-3">
+      <div class="sec5 sec5-2 md:w-1/3 flex justify-center   group my-3">
         <div class=" relative overflow-hidden rounded-3xl border-[5px] box-border">
           <img src="./source/pr.jpg" class=" duration-500  group-hover:scale-110" alt="">
           <div class="absolute w-full h-full top-0">
             <div class=" h-full flex justify-around w-full items-end py-5">
               <div class="w-2/3">
                 <h2 class="font-medium text-2xl text-white group-hover:text-main">Product design</h2>
-                <p class="sm:font-normal text-white  text-pretty">
+                <p class="sm:font-normal text-white">
                   Developing the look and feel of physical
                   <span class="hidden lg:block">
                     products, aesthetics, and functionality.
@@ -353,7 +367,7 @@
       </div>
 
 
-      <div class=" sec5  md:w-1/3 flex justify-center group my-3 ">
+      <div class=" sec5 sec5-3  md:w-1/3 flex justify-center group my-3 ">
         <div class=" sec5  relative overflow-hidden rounded-3xl border-[5px] box-border">
 
           <img src="./source/project-img-2.jpg" class="duration-500  group-hover:scale-110" alt="">
@@ -362,7 +376,7 @@
             <div class=" h-full flex justify-around w-full items-end py-5">
               <div class="w-2/3">
                 <h2 class="font-medium text-2xl text-white group-hover:text-main">Logo and Branding</h2>
-                <p class="sm:font-normal text-white  text-pretty">
+                <p class="sm:font-normal text-white">
                   Developing the look and feel of physical
                   <span class="hidden lg:block">
                     products, aesthetics, and functionality.
@@ -383,7 +397,7 @@
       </div>
 
 
-      <div class=" sec5  md:w-1/3 flex justify-center group  my-3 ">
+      <div class=" sec5 sec5-4  md:w-1/3 flex justify-center group  my-3 ">
         <div class=" sec5  relative overflow-hidden rounded-3xl border-[5px] box-border">
 
           <img src="./source/project-img-3.jpg" class="duration-500  group-hover:scale-110 " alt="">
@@ -392,7 +406,7 @@
             <div class=" h-full flex justify-around w-full items-end py-5">
               <div class="w-2/3">
                 <h2 class="font-medium text-2xl text-white group-hover:text-main">App UI/UX design</h2>
-                <p class="sm:font-normal text-white  text-pretty">
+                <p class="sm:font-normal text-white">
                   Developing the look and feel of physical
                   <span class="hidden lg:block">products, aesthetics, and functionality.
                   </span>
@@ -417,28 +431,28 @@
   <!-- section6 -->
 
 
-  <div class="  w-full  box-border py-24 flex justify-center  ">
+  <div class=" sec-6  w-full  box-border py-24 flex justify-center  ">
     <div class="w-11/12 gap-y-5 xmd:flex gap-4 box-border ">
-      <div class="w-full xmd:w-3/5 xmd:h-[300px]    flex flex-col justify-around   ">
+      <div class="sec6-1 w-full xmd:w-3/5 xmd:h-[300px]    flex flex-col justify-around   ">
 
-        <h1 class="text-3xl  text-center xmd:text-start   xs:text-5xl md:text-6xl xmd:text-5xl lg:text-6xl font-semibold font-serif  ">
+        <h1 class="text-3xl  text-center xmd:text-start   xs:text-5xl md:text-6xl xmd:text-5xl lg:text-6xl font-semibold   ">
           Our high-quality <span class="text-main">*</span>  <br> working processes
         </h1>
 
 
-        <p class=" text-xl mt-10 font-normal ">We focus at every stage on effective communication and
+        <p class=" text-xl mt-10 font-normal text-pretty ">We focus at every stage on effective communication and
           collaboration between the client and ensuring that the final design meets the client's objectives and
           expectations.</p>
-        <p class=" text-xl my-10 font-normal  text-pretty">It is important to note that these are simplified steps, and
+        <p class=" text-xl my-10 font-normal text-pretty">It is important to note that these are simplified steps, and
           the actual work process may vary depending on the complexity of the project.</p>
       </div>
 
 
 
-      <div class="w-full xmd:w-1/3  flex flex-col justify-center  gap-6 xmd:h-[350px]  box-border ">
+      <div class="  w-full xmd:w-1/3  flex flex-col justify-center  gap-6 xmd:h-[350px]  box-border ">
 
-        <div class="group">
-          <div class="group-hover:bg-main  border-[3px] border-black p-4 rounded-3xl">
+        <div class="cursor-pointer sec6-2 group">
+          <div class=" group-hover:bg-main  border-[3px] border-black p-4 rounded-3xl">
             <div class=" flex justify-around items-center  ">
               <h1 class=" text-xl xs:text-3xl font-medium">01/Project idea</h1>
               <i class="fa-solid fa-angles-down group-hover:rotate-180 duration-100"></i>
@@ -446,7 +460,7 @@
 
 
             <div>
-              <p class="hidden group-hover:block transition-all mt-4">The process starts with a detailed discussion with
+              <p class="hidden group-hover:block transition-all mt-4 text-pretty">The process starts with a detailed discussion with
                 the
                 client to understand their idea & goals.</p>
             </div>
@@ -454,14 +468,14 @@
         </div>
 
 
-        <div class="group">
+        <div class=" cursor-pointer sec6-3 group">
           <div class=" border-[3px] border-black p-4 rounded-3xl group-hover:bg-main duration-200 ">
             <div class=" flex justify-around items-center  ">
               <h1 class="text-xl xs:text-3xl font-medium">02/Project idea</h1>
               <i class="fa-solid fa-angles-down group-hover:rotate-180 duration-100"></i>
             </div>
             <div>
-              <p class="hidden group-hover:block duration-200 mt-4  text-pretty">The process starts with a detailed discussion with
+              <p class="hidden group-hover:block duration-200 mt-4 text-pretty">The process starts with a detailed discussion with
                 the
                 client to understand their idea & goals.</p>
             </div>
@@ -469,14 +483,14 @@
         </div>
 
 
-        <div class="group ">
+        <div class="cursor-pointer sec6-4 group ">
           <div class=" border-[3px] border-black p-4 rounded-3xl  group-hover:bg-main">
             <div class=" flex justify-around items-center  ">
               <h1 class="text-xl xs:text-3xl font-medium">03/Project idea</h1>
               <i class="fa-solid fa-angles-down group-hover:rotate-180 duration-100"></i>
             </div>
             <div>
-              <p class="hidden group-hover:block transition-all mt-4  text-pretty">The process starts with a detailed discussion with
+              <p class="hidden group-hover:block transition-all mt-4 text-pretty">The process starts with a detailed discussion with
                 the
                 client to understand their idea & goals.</p>
             </div>
@@ -488,21 +502,22 @@
     </div>
 
   </div>
+
   <hr class="border-[1px] mx-5 xs:mx-14 ">
 
 
   <!-- section7 -->
 
-  <div class="w-full  flex flex-col items-center py-5 sm:py-20 ">
-    <div class="w-11/12  flex justify-center xs:px-10 py-7 xs:mb-5 box-border ">
-      <h1 class="text-3xl  xs:text-5xl font-semibold font-serif  md:text-6xl text-center  lg:text-8xl">
+  <div class="sec-7  w-full  flex flex-col items-center py-5 sm:py-20 ">
+    <div class="sec7-1 w-11/12  flex justify-center xs:px-10 py-7 xs:mb-5 box-border ">
+      <h1 class="text-3xl  xs:text-5xl font-semibold   md:text-6xl text-center  lg:text-8xl">
         Clients are always satisfied with us <span class="text-main">*</span>
       </h1>
     </div>
     <div class="w-11/12     ">
       <div class=" md:flex gap-5">
         <div
-          class=" w-full my-5 md:m-0 md:w-2/4  box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between">
+          class=" sec7-1 w-full my-5 md:m-0 md:w-2/4  box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between">
           <div class="flex gap-3 my-3">
             <i class="fa-solid fa-star text-black text-2xl "></i>
             <i class="fa-solid fa-star text-black text-2xl "></i>
@@ -511,7 +526,7 @@
             <i class="fa-solid fa-star text-black text-2xl "></i>
           </div>
           <h2 class="text-3xl my-5">Super customer service!</h2>
-          <p class="font-normal my-5  text-pretty">Excellent customer service and I was really impressed and happy with my purchase
+          <p class="font-normal my-5 text-pretty">Excellent customer service and I was really impressed and happy with my purchase
             especially as it was a last minute order which got to me in time, and when it arrived I was very happy with
             the design and size and so was the recipient.</p>
           <div class="flex items-center mt-12  ">
@@ -525,7 +540,7 @@
         </div>
 
         <div
-          class=" w-full my-5 md:m-0 md:w-2/4 box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between  ">
+          class=" sec7-2 w-full my-5 md:m-0 md:w-2/4 box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between  ">
           <div class="flex gap-3 my-3">
             <i class="fa-solid fa-star text-black text-2xl "></i>
             <i class="fa-solid fa-star text-black text-2xl "></i>
@@ -534,7 +549,7 @@
             <i class="fa-solid fa-star text-black text-2xl "></i>
           </div>
           <h2 class="text-3xl my-5">Exceptional creativity and vision</h2>
-          <p class="font-normal my-5  text-pretty">Working with Mthemeus was a game-changer for our brand. Their exceptional
+          <p class="font-normal my-5 text-pretty">Working with Mthemeus was a game-changer for our brand. Their exceptional
             creativity & vision breathed new life into our visual. The logo they designed perfectly captures our essence
             & has become instantly recognizable. We couldn't be happier with the results!</p>
           <div class="flex items-center mt-12  ">
@@ -553,7 +568,7 @@
 
 
         <div
-          class=" w-full my-5 md:m-0 md:w-2/4  box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between  ">
+          class=" sec7-3 w-full my-5 md:m-0 md:w-2/4  box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between  ">
           <div class="flex gap-3 my-3">
             <i class="fa-solid fa-star text-black text-2xl "></i>
             <i class="fa-solid fa-star text-black text-2xl "></i>
@@ -562,7 +577,7 @@
             <i class="fa-solid fa-star text-black text-2xl "></i>
           </div>
           <h2 class="text-3xl my-5">Transformed our brand</h2>
-          <p class="font-normal my-5  text-pretty">Our partnership with Mthemeus transformed our brand from ordinary to
+          <p class="font-normal my-5 text-pretty">Our partnership with Mthemeus transformed our brand from ordinary to
             extraordinary. Their branding expertise and meticulous design work elevated our marketing materials to a
             whole new level. Our customers have taken notice, and boost in brand recognition.</p>
           <div class="flex items-center mt-12  ">
@@ -576,7 +591,7 @@
         </div>
 
         <div
-          class=" w-full my-5 md:m-0 md:w-2/4  box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between  ">
+          class=" sec7-4 w-full my-5 md:m-0 md:w-2/4  box-border p-8 border-[3px] rounded-3xl border-black hover:shadow-hvr transition-all flex flex-col justify-between  ">
           <div class="flex gap-3 my-3">
             <i class="fa-solid fa-star text-black text-2xl "></i>
             <i class="fa-solid fa-star text-black text-2xl "></i>
@@ -666,10 +681,10 @@
 
 
 
-  <div class="w-full py-10 sm:py-24  flex flex-col items-center ">
+  <div class="sec-8  w-full py-10 sm:py-24  flex flex-col items-center ">
 
-    <div class="w-11/12 pb-10 sm:pb-20 flex justify-center">
-      <div class="text-3xl   xs:text-5xl font-semibold font-serif  md:text-6xl   lg:text-8xl  ">
+    <div class=" sec8-1 w-11/12 pb-10 sm:pb-20 flex justify-center">
+      <div class="text-3xl   xs:text-5xl font-semibold   md:text-6xl   lg:text-8xl  ">
         <div> We have a team of</div>
         <div> creative people <span class="text-main">*</span></div>
 
@@ -681,7 +696,7 @@
     <div
       class=" w-11/12 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4     box-border ">
 
-      <div class=" text-center group box-border ">
+      <div class=" sec8-2 text-center group box-border ">
         <div class="relative  border-[5px] border-black rounded-xl overflow-hidden">
           <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/team-img-2.jpg"
             class="object-cover  h-full w-full group-hover:scale-105 rounded-xl transition-all" alt="">
@@ -707,7 +722,7 @@
         </div>
       </div>
 
-      <div class="   text-center group box-border">
+      <div class="sec8-2   text-center group box-border">
         <div class="relative  border-[5px] border-black rounded-xl overflow-hidden">
           <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/team-img-1.jpg"
             class="object-cover  rounded-xl h-full w-full  group-hover:scale-105 transition-all" alt="">
@@ -733,7 +748,7 @@
         </div>
       </div>
 
-      <div class="   text-center group box-border">
+      <div class=" sec8-2  text-center group box-border">
         <div class="relative  border-[5px] border-black rounded-xl overflow-hidden">
           <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/team-img-4.jpg"
             class="object-cover rounded-xl h-full w-full group-hover:scale-105 transition-all " alt="">
@@ -759,9 +774,9 @@
         </div>
       </div>
 
-      <div class="   text-center box-border  group ">
+      <div class="sec8-2   text-center box-border  group ">
         <div class="relative  border-[5px]  border-black rounded-xl overflow-hidden">
-          <img src="https://aximo-tailwind.netlify.app/assets/img/images/th-1/team-img-3.jpg"
+          <img src="./assets/img/kohaal.png"
             class="object-cover h-full w-full overflow-hidden group-hover:scale-105 transition-all" alt="">
 
           <div class="w-full h-full  absolute top-0 left-0 flex items-end  justify-center overflow-hidden    ">
@@ -780,7 +795,7 @@
 
         </div>
         <div>
-          <h1 class="font-semibold text-3xl my-3">Adam straw</h1>
+          <h1 class="font-semibold text-3xl my-3">Nitin kohaal</h1>
           <p class="font-normal text-xl mb-3">Web Developer</p>
         </div>
       </div>
@@ -792,13 +807,13 @@
   <!-- section10 -->
 
 
-  <div class="w-full bg-black pt-10  sm:pt-20 flex flex-col  items-center">
+  <div class="sec-10 w-full bg-black pt-10  sm:pt-20 flex flex-col  items-center">
 
     <div class="w-11/12 py-10  grid gap-x-6 gap-y-10 grid-cols-1  xmd:grid-cols-2 ">
-      <div class=" text-center sm:text-start  ">
+      <div class=" sec10-1 text-center sm:text-start  ">
         <div>
           <h1
-            class="text-[33px] text-center xmd:text-start font-medium   xs:text-6xl  font-serif lg:text-7xl mb-6 text-white   ">
+            class="text-[33px] text-center xmd:text-start font-medium   xs:text-6xl   lg:text-7xl mb-6 text-white   ">
             We make your <span class="text-main  ">*</span> business stand out</h1>
           <p class="font-medium xs:text-xl text-white text-pretty ">We work closely with our clients to understand their objectives,
             target audience, and unique needs. We use our creative skills to translate these requirements and practical
@@ -817,7 +832,7 @@
       </div>
 
 
-      <div class="bg-black pb-20  ">
+      <div class="sec10-2 bg-black pb-20  ">
 
 
         <h1 class=" text-2xl xs:my-6 xs:text-3xl text-white text-center font-mono my-5  "> Send message again</h1>
@@ -839,8 +854,8 @@
 
           <button
             class="  bg-main  px-4   box-border border border-solid border-black   rounded-3xl shadow-btn hover:shadow-none duration-200 my-2 flex justify-around items-center gap-4 xs:gap-8  ">
-            <span class="text-2xl "> send message</span>
-            <span class="text-2xl ">
+            <span class="text-2xl font-semibold"> send message</span>
+            <span class="text-2xl font-semibold">
               <i class="fa-solid fa-right-long p-3 rounded-[50%] bg-black text-white"></i>
             </span>
           </button>
@@ -871,20 +886,10 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./java.js"></script>
 </body>
+
 
 </html>
