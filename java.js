@@ -1,5 +1,6 @@
 const lenis = new Lenis({
-  duration:4
+  duration:4,
+  infinite:true
 });
 
 function raf(time){
