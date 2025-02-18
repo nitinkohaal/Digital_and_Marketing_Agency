@@ -1,12 +1,13 @@
-const lenis = new Lenis();
-
-lenis.on('scroll', ScrollTrigger.update);
-
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+const lenis = new Lenis({
+  duration:4
 });
 
-gsap.ticker.lagSmoothing(0);
+function raf(time){
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 
 // loader 
