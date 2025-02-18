@@ -1,14 +1,17 @@
- {
+{
   "name": "tailwind",
   "description": "description",
   "authors": "author",
   "version": "1.0.0",
   "main": "pathToMain",
   "scripts": {
-    "build":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20"
   }
-  
 }
