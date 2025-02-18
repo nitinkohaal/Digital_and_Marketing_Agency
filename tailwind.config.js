@@ -5,6 +5,11 @@ module.exports = {
 
 
     extend: {
+
+      fontFamily:{
+        lato:[ "Lato", "sans-serif"],
+      },
+      
       boxShadow: {
         btn: '0px 5px 0 white ',
         hvr:'7px 7px 0 black',
