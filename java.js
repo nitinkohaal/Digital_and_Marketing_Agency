@@ -1,6 +1,8 @@
 const lenis = new Lenis({
+  infinite:true,
   duration:4,
-  infinite:true
+  smoothTouch: true, // Enables smooth scrolling on touch devices
+  touchMultiplier: 2, 
 });
 
 function raf(time){
