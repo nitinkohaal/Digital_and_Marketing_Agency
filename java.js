@@ -1,17 +1,39 @@
+const lenis = new Lenis();
+
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+});
+
+gsap.ticker.lagSmoothing(0);
+
+
+// loader 
+
+
 gsap.to(".loader-text", { opacity: 1, duration: 1, yoyo: true, repeat: -1, ease: "power1.inOut" });
   gsap.to(".loader-bar", { width: "100%", duration: 3, ease: "power2.out" });
   
-  gsap.to(".loader", {
-      delay: 0.5,
-      opacity: 0,
-      duration: 1,
-  });
-window.addEventListener('load', () => {
+
+
+window.addEventListener('DOMContentLoaded', () => {
   
 
- document.querySelector(".loader").style.display = "none"
+  setTimeout(()=>{
+
+   document.querySelector(".loader").style.display = "none"
+
+  
+    },5000)
 
 });
+
+
+
+
+
+// navigation 
 
 let nav = document.getElementById('nav');
 
@@ -20,11 +42,6 @@ let lastScrollTop = 0;
 
 window.addEventListener("scroll", (e) => {
     let scrollTop = window.scrollY;
-
-
-
-    
-
     if (scrollTop > lastScrollTop) {
       // Scrolling Down
       gsap.to(nav,{
@@ -32,20 +49,40 @@ window.addEventListener("scroll", (e) => {
         duration: 0.5,
 
       })
-
-    
-
-    
         
     } else {
-        // Scrolling Up
         gsap.to(nav,{
         y: 0,
         duration: 0.5
       })
+     
     }
 
+    lastScrollTop = scrollTop;
+});
+
+
+// cursor
+
+const cursor = document.getElementById('cursor');
+
+window.addEventListener('mousemove',(e)=>{
+    let x = e.clientX;
+    let y = e.clientY;
+
+    gsap.to(cursor,{
+      x:x,
+      y:y,
+      duration:0.1
+
+    })
+
+  
+
+
 })
+
+
 
 
 const mm = gsap.matchMedia();
