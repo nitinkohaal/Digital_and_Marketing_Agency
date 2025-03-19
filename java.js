@@ -26,7 +26,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(()=>{
 
-   document.querySelector(".loader").style.display = "none"
+  
+    gsap.to('.loader',{
+      scale:5,
+      opacity:0,
+      duration:2,
+      oncomplete:{
+         document.querySelector(".loader").style.display = "none"
+    }
+    })
 
   
     },5000)
