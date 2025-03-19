@@ -1,5 +1,5 @@
 const lenis = new Lenis({
-  infinite:true,
+  // infinite:true,
   duration:4,
   smoothTouch: true, // Enables smooth scrolling on touch devices
   touchMultiplier: 2, 
