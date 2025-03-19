@@ -27,14 +27,18 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(()=>{
 
   
-    gsap.to('.loader', {
+    gsap.to(".loader", {
   scale: 5,
   opacity: 0,
   duration: 2,
-  onComplete: function() {
-    document.querySelector(".loader").style.display = "none";
-  }
+ 
 });
+
+    setTimeout(()=>{
+       
+    document.querySelector(".loader").style.display = "none";
+  
+    },3000);
 
   
     },5000)
